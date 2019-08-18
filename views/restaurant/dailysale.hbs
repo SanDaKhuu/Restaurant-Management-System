@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Daily Sale | Restaurant Management System Admin Template</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleBasic.css">
+    <!-- responsive CSS
+		============================================ -->
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/process.js"></script>
+</head>
+
+<style>
+	.product-status{
+		padding-left: 10px;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+</style>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 paddingReset">
+			    <div class="left-sidebar-pro">
+					<nav id="sidebar" class="">
+
+						<ul class="myScroll">
+							<li>
+								<div class="sidebar-header">
+									<a title="Home" href="/index"><img class="main-logo" src="../img/logo/logo13.png" alt="" /></a>
+								</div>
+							</li>
+
+							<li>
+								<div class="left-custom-menu-adp-wrap comment-scrollbar">
+									<nav class="sidebar-nav left-sidebar-menu-pro">
+															
+										<ul class="metismenu" id="menu1">
+
+											<li><a title="Menu List" href="../foodDB/food-list"><i class="fa fa-list sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Menu List</span></a></li>
+
+											<li><a title="New Menu" href="/foodDB"><i class="fa fa-bolt sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Create New Menu</span></a></li>
+
+											<li><a title="Drink List" href="../drinkDB/drinklist"><i class="fa fa-bolt sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Drink List</span></a></li>
+											
+											<li><a title="Payment" href="/food-payment"><i class="fa fa-location-arrow sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Payment</span></a></li>  
+
+											<li><a title="Admin" href="../adminDB/list"><i class="fa fa-user sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">Admin</span></a></li>
+
+											<li><a title="Staff" href="../staffDB/staff"><i class="fa fa-male sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Staff</span></a></li>
+									
+											<li><a title="Voucher" href="../vouDB/voucher"><i class="fa fa-sticky-note-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Voucher</span></a></li>
+
+											<li class="active"><a title="Daily Sale" href="#"><i class="fa fa-line-chart sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Daily Sale</span></a></li>
+
+											<li><a title="Monthly Sale" href="/monthlysale"><i class="fa fa-line-chart sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Monthly Sale</span></a></li> 
+											
+										</ul>
+									</nav>
+								</div>
+							</li>
+						</ul>
+
+			        </nav>
+			    </div>
+			</div>
+
+			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 paddingReset">
+
+				    <div class="all-content-wrapper">
+
+				        <div class="header-advance-area">
+				            <div class="header-top-area">
+				                <div class="container-fluid">
+				                    <div class="row">
+
+				                        <div class="col-lg-12 col-md-12 col-sm-11 col-xs-12">
+				                            <div class="header-top-wraper">
+				                                <div class="row marginReset">
+
+	                                				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 paddingReset">
+                                						<div class="dropdown">
+                                							<a class="btn dropdown-toggle" data-toggle="dropdown">
+                                								<span class="admin-name"><i class="fa fa-bars"></i></span>
+                                							</a>
+                                							
+                                							<ul id="listdown" role="menu" class="dropdown-menu animated zoomIn myScroll1">
+
+																<li><a title="Home" href="/index"><i class="fa big-icon fa-home icon-wrap"></i><span class="mini-sub-pro">Home</span></a></li>
+
+																<li><a title="Menu List" href="../foodDB/food-list"><i class="fa fa-list sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Menu List</span></a></li>
+
+																<li><a title="New Menu" href="/foodDB"><i class="fa fa-bolt sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Create New Menu</span></a></li>
+
+																<li><a title="Drink List" href="../drinkDB/drinklist"><i class="fa fa-bolt sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Drink List</span></a></li>
+																
+																<li><a title="Payment" href="/food-payment"><i class="fa fa-location-arrow sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Payment</span></a></li> 
+
+																<li><a title="Admin" href="../adminDB/list"><i class="fa fa-user sub-icon-mg" aria-hidden="true"></i><span class="mini-sub-pro">Admin</span></a></li>
+
+																<li><a title="Staff" href="../staffDB/staff"><i class="fa fa-male sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Staff</span></a></li>
+														
+																<li><a title="Voucher" href="../vouDB/voucher"><i class="fa fa-sticky-note-o sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Voucher</span></a></li>
+
+																<li><a title="Daily Sale" href="#"><i class="fa fa-line-chart sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Daily Sale</span></a></li>
+
+																<li><a title="Monthly Sale" href="/monthlysale"><i class="fa fa-line-chart sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Monthly Sale</span></a></li> 
+
+                                							</ul>
+                                						</div>
+	                                				</div>
+
+                        				            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 paddingReset">
+                        				                <div class="dropdown">
+                        				                    <a data-toggle="dropdown" class="btn dropdown-toggle">
+                        											<i class="fa fa-user-plus adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
+                        											<span class="admin-name">Register Here</span>
+                        											<i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                        									</a>
+
+                        				                    <ul class="dropdown-menu animated zoomIn">
+                        				                        <li><a href="/adminDB"><span class="fa fa-home author-log-ic"></span>Register</a>
+                        				                        </li>
+
+                        				                        <li><a href="/login"><span class="fa fa-lock author-log-ic"></span>Log Out</a>
+                        				                        </li>
+                        				                    </ul>
+                        				                </div>
+                        				            </div>
+
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+
+				        </div>
+
+				        <div class="product-status">
+				            <div class="container-fluid">
+				                <div class="row">
+				                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				                        <div class="product-status-wrap">
+				                        	<div class="row">
+				                            	{{!-- <h1>Monthly Sale Table</h1> --}}
+												<p class="active" style="display: inline-block; width: 100%;">Daily Sale Table</p>
+				                          	</div>
+
+				                          	<div class="row">
+												<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+												    <br>
+
+													<thead>
+													  <tr role="row">
+													    <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="No: activate to sort column descending" style="width: 22.55681800842285px;">No</th>
+													    <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="DS_ID: activate to sort column ascending" style="width: 60.7386360168457px;">DS_ID</th>
+													    <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="V_ID: activate to sort column ascending" style="width: 47.102272033691406px;">V_ID</th>
+													    <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Grand_Total: activate to sort column ascending" style="width: 132.5568084716797px;">Grand_Total(MMK)</th>
+													    <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending" style="width: 63.46590805053711px;">Date</th>
+													  </tr>
+													</thead>
+
+													<tbody>
+													  <tr>
+													    <td>1</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>2</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>3</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>4</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>5</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>6</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+													    <td>3/10/2019</td>
+													  </tr>
+													  <tr>
+													    <td>7</td>
+													    <td>DS1</td>
+													    <td>V1</td>
+													    <td>40000</td>
+													    <td>3/10/2019</td>
+													  </tr>                
+													</tbody>
+
+												</table>
+				                          	</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+				        <div class="footer footer-copyright-area">
+				        	<div class="footer-copy-right">
+				        		<p>Copyright &copy; 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
+				        	</div>				        	
+				        </div>
+
+				    </div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
